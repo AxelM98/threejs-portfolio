@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.loadingContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loadingH1 {
+    color: $tertiary;
+  }
+}

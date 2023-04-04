@@ -1,0 +1,16 @@
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none; // Doen't work on Chrome
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  color: white;
+ // background: url("./img/bg.jpeg");
+ // background: url("./img/background.jpg");
+ // background: url("./img/bgthree.jpg");
+  background: url("./img/bgfour.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.whoSection {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .whoContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    .whoLeft {
+      flex: 1;
+    }
+    .whoRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      flex: 1;
+      .whoH1 {
+        font-size: 50px;
+      }
+      .whoWhatWeDo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .whoLine {
+          font-size: 30px;
+          color: white;
+        }
+        .whoSubtitle {
+          color: $primary;
+        }
+      }
+      .whoDesc {
+        font-size: 24px;
+        color: $tertiary;
+      }
+      .whoButton {
+        background-color: $primary;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        width: fit-content;
+        min-width: 100px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: $tertiary;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.worksSection {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .worksContainer {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    .worksLeft {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .worksUl {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        /* .worksLi {} */
+      }
+    }
+    .worksRight {
+      flex: 1;
+    }
+  }
+}

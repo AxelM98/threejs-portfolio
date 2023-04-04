@@ -1,0 +1,77 @@
+@import "../../variables.scss";
+
+.navbarSection {
+  display: flex;
+  justify-content: center;
+  .navbarContainer {
+    padding: 10px 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbarLinks {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .navbarLogo {
+        height: 50px;
+        font-weight: 100;
+        cursor: pointer;
+      }
+
+      .navbarUl {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      .navbarLi {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s ease;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $primary;
+          height: 2px;
+          width: 0;
+          left: 0;
+          bottom: -5px;
+          transition: 0.5s ease;
+        }
+        &:hover {
+          color: $tertiary;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    .navbarIcons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .navbarSearchIcon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      .navbarButton {
+        width: 100px;
+        padding: 10px 20px;
+        background-color: $primary;
+        color: white;
+        border: none;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: $tertiary;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

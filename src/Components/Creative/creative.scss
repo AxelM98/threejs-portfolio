@@ -1,0 +1,129 @@
+@import "../../variables.scss";
+
+.creativeContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .creativeWrapper {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    .creativeLeft {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      .creativeH1 {
+        color: $primary;
+        font-weight: 400;
+        font-size: 50px;
+      }
+      .creativeP {
+        color: $tertiary;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .sp2 {
+        font-weight: 500;
+      }
+      .creativeBtnContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .creativeBtn {
+          background-color: transparent;
+          border: 1px solid $tertiary;
+          color: lightgray;
+          padding: 15px;
+          border-radius: 1.5rem;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .creativeBtnGold {
+          border: 1px solid #fbf2bd;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: #fbf2bd;
+            color: black;
+            .creativeIconGold {
+              color: black;
+            }
+          }
+          .creativeIconGold {
+            color: #fbf2bd;
+          }
+        }
+        .creativeBtnPurple {
+          border: 1px solid #f273f2;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: #f273f2;
+            color: black;
+            .creativeIconPurple {
+              color: black;
+            }
+          }
+          .creativeIconPurple {
+            color: #f273f2;
+          }
+        }
+        .creativeBtnBlue {
+          border: 1px solid #6d9ed2;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: #6d9ed2;
+            color: black;
+            .creativeIconBlue {
+              color: black;
+            }
+          }
+          .creativeIconBlue {
+            color: #6d9ed2;
+          }
+        }
+        .creativeBtnRed {
+          border: 1px solid #c25b5b;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: #c25b5b;
+            color: black;
+            .creativeIconRed {
+              color: black;
+            }
+          }
+          .creativeIconRed {
+            color: #c25b5b;
+          }
+        }
+        .creativeBtnOrange {
+          border: 1px solid #d8a850;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: #d8a850;
+            color: black;
+            .creativeIconOrange {
+              color: black;
+            }
+          }
+          .creativeIconOrange {
+            color: #d8a850;
+          }
+        }
+      }
+    }
+    .creativeRight {
+      flex: 1;
+    }
+  }
+}

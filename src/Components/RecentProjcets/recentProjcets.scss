@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.rpSection {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .rpContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    .rpLeft {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .rpGallery {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* .rpGalleryItem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid gold;
+            border-radius: 5px;
+            width: 270px;
+            height: 200px;
+        } */
+      }
+    }
+    .rpRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      flex: 1;
+      .rpH1 {
+        font-size: 50px;
+      }
+      .rpWhatWeDo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .rpLine {
+          font-size: 30px;
+          color: white;
+        }
+        .rpSubtitle {
+          color: $primary;
+        }
+      }
+      .rpDesc {
+        font-size: 24px;
+        color: $tertiary;
+      }
+      .rpButton {
+        background-color: $primary;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        width: fit-content;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: $tertiary;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
